@@ -1,7 +1,7 @@
 const Pricing = () => {
   return (
     <div className="mt-16">
-        <div className="text-center mb-6">
+        <div className="text-center mb-6 mx-2">
             <h3 className="text-4xl font-semibold mb-2">Simple, Transparent Pricing</h3>
             <p className="text-[#627382FF] mb-2">Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
         </div>

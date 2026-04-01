@@ -5,8 +5,11 @@
 # Technology Used
 1. HTML
 2. Tailwind CSS
-3. JavaScript
-4. React
+3. DaisyUI
+4. JavaScript
+5. React.Js
+6. JSON
+7. React-Toastify
 
 # 3 Main Feature
 1. User can Add to cart his/her favorite products
