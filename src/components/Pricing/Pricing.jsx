@@ -9,7 +9,7 @@ const Pricing = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full md:w-[90%] lg:w-[80%] mx-auto px-4 justify-items-center">
             <div className="card w-96 bg-[#F9FAFC] shadow-sm max-w-[300px]">
                 <div className="card-body flex flex-col">
-                    <div className="">
+                    <div className="mx-2">
                         <h2 className="text-2xl font-semibold mb-1">Starter</h2>
                         <p className="text-[#627382FF] mb-2">Perfect for getting started</p>
                         <p className="text-[#627382FF] mb-3"><span className="text-3xl text-black font-bold">$0</span>/Month</p>

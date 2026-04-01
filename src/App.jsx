@@ -29,7 +29,7 @@ const App = () => {
       <Stats/>
       <ToolsHeading/>
       {/* name of each tab group should be unique */}
-      <div className="tabs tabs-box justify-center bg-white mb-4">
+      <div className="tabs justify-center bg-white mb-4 mt-4">
         <input type="radio" name="my_tabs_1" className={`tab rounded-full ${activeTab === "tool" ? "bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white" : ""}`} onClick={()=> setActiveTab("tool")} aria-label="Products" defaultChecked />
         <input type="radio" name="my_tabs_1" className={`tab rounded-full ${activeTab === "cart" ? "bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white" : ""}`} onClick={()=> setActiveTab("cart")} aria-label={`Cart (${cart.length})`} />
       </div>

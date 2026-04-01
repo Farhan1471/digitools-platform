@@ -5,7 +5,7 @@ import RocketIcon from "../../assets/rocket.png";
 const Feature = () => {
   return (
     <div className="mt-16">
-        <div className="text-center mb-6">
+        <div className="text-center mb-6 mx-2">
             <h3 className="text-4xl font-semibold mb-2">Get Started in 3 Steps</h3>
             <p className="text-[#627382FF] mb-2">Start using premium digital tools in minutes, not hours.</p>
         </div>

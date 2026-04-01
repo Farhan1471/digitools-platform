@@ -27,8 +27,8 @@ const Navbar = ({cart}) => {
                 </div>
             </div>
 
-            <div className="md:hidden w-[80%] mx-auto">
-                <div className='flex justify-between items-center mb-4'>
+            <div className="md:hidden w-[80%] mx-auto mt-2">
+                <div className='flex justify-between items-center mb-6'>
                     <h2 className='bg-gradient-to-r from-[#4f39f6] to-[#9514fa] bg-clip-text text-transparent text-3xl font-bold'>DigiTool</h2>
 
                     <a className="cursor-pointer"><FontAwesomeIcon icon={faCartShopping} />{cart.length > 0 && cart.length}</a>

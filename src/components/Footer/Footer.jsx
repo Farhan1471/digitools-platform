@@ -102,21 +102,27 @@ const Footer = () => {
           <div className="md:col-span-2">
             <h3 className="text-white font-semibold mb-6 text-lg">Social Links</h3>
             <ul className="space-y-4 text-zinc-400 flex gap-6">
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  <FontAwesomeIcon icon={faInstagram} />
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  <FontAwesomeIcon icon={faSquareFacebook} />
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  <FontAwesomeIcon icon={faXTwitter} />
-                </a>
-              </li>
+                  <li>
+                    <div className="bg-white text-black rounded-full p-2">                 
+                      <a href="#" className="hover:text-black transition">
+                        <FontAwesomeIcon icon={faInstagram} />
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="bg-white text-black rounded-full p-2">                 
+                      <a href="#" className="hover:text-black transition">
+                        <FontAwesomeIcon icon={faSquareFacebook} />
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="bg-white text-black rounded-full p-2">                 
+                      <a href="#" className="hover:text-black transition">
+                        <FontAwesomeIcon icon={faXTwitter} />
+                      </a>
+                    </div>
+                  </li>
             </ul>
           </div>
         </div>
