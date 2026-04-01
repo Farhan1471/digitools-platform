@@ -18,8 +18,11 @@ const Cart = ({cart, setCart}) => {
     return(
         <div className="card bg-white shadow-lg w-[75%] mx-auto">
             <h2 className="font-semibold p-6">Your Cart</h2>
-            {
-                cart.map(item => (
+            {cart.length === 0 ? (
+                <p className="text-center text-[#627382] mb-4">Your cart is empty!</p>
+            ) : (
+                <> 
+                {cart.map((item) => (
                     <div key={item.id} className="flex justify-between items-center bg-[#F9FAFC] shadow-sm flex gap-4 items-center justify-center mx-auto mb-4 p-3 w-[90%]">
                         <div className="flex gap-3 items-center w-[90%]">
                                 <div className="bg-white rounded-full p-3">
@@ -37,8 +40,7 @@ const Cart = ({cart, setCart}) => {
 
                         
                     </div>
-                ))
-            }
+                ))}
             <div className="flex justify-between items-center w-[90%] mx-auto mb-4">
                 <p>Total: </p>
                 <p>${totalPrice}</p>
@@ -47,8 +49,10 @@ const Cart = ({cart, setCart}) => {
             <button className="w-[90%] mx-auto rounded-full text-white py-3 mb-10 bg-gradient-to-r from-[#4f39f6] to-[#9514fa]" onClick={handleCheckout}>
                 Proceed to Checkout
             </button>
+            </>
+            )}
         </div>
-    )
+    );
 }
 
 export default Cart;
