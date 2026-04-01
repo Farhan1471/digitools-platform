@@ -8,7 +8,7 @@ const Workflow = () => {
                     <p className="pt-2 pb-6 text-sm">
                         Join thousands of professionals who are already using Digitools to work smarter. <br /> Start your free trial today.
                     </p>
-                    <div className="flex gap-3 justify-center">
+                    <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
                         <button className="btn btn-primary rounded-full bg-white text-[#4f39f6]">Explore Products</button>
                         <button className="btn btn-primary rounded-full bg-transparent border-white text-white">View Pricing</button>
                     </div>

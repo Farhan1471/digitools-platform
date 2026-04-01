@@ -1,6 +1,11 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faSquareFacebook } from '@fortawesome/free-brands-svg-icons'
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons'
+
 const Footer = () => {
   return (
-    <footer className="bg-zinc-950 border-t border-red-900/50 pt-16 pb-10">
+    <footer className="bg-zinc-950 border-t pt-16 pb-10">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
           <div className="md:col-span-4">
@@ -96,20 +101,20 @@ const Footer = () => {
 
           <div className="md:col-span-2">
             <h3 className="text-white font-semibold mb-6 text-lg">Social Links</h3>
-            <ul className="space-y-4 text-zinc-400">
+            <ul className="space-y-4 text-zinc-400 flex gap-6">
               <li>
                 <a href="#" className="hover:text-white transition">
-                  Instagram
+                  <FontAwesomeIcon icon={faInstagram} />
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-white transition">
-                  Facebook
+                  <FontAwesomeIcon icon={faSquareFacebook} />
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-white transition">
-                  X
+                  <FontAwesomeIcon icon={faXTwitter} />
                 </a>
               </li>
             </ul>

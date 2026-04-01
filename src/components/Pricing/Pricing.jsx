@@ -1,12 +1,12 @@
 const Pricing = () => {
   return (
-    <div className="mt-24">
-        <div className="text-center">
-            <h3 className="text-4xl font-semibold mb-2">Get Started in 3 Steps</h3>
-            <p className="text-[#627382FF] mb-2">Start using premium digital tools in minutes, not hours.</p>
+    <div className="mt-16">
+        <div className="text-center mb-6">
+            <h3 className="text-4xl font-semibold mb-2">Simple, Transparent Pricing</h3>
+            <p className="text-[#627382FF] mb-2">Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
         </div>
 
-        <div className="flex justify-center gap-7">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full md:w-[90%] lg:w-[80%] mx-auto px-4 justify-items-center">
             <div className="card w-96 bg-[#F9FAFC] shadow-sm max-w-[300px]">
                 <div className="card-body flex flex-col">
                     <div className="">
@@ -38,7 +38,13 @@ const Pricing = () => {
                 </div>
             </div>
 
-            <div className="card w-96 bg-gradient-to-r from-[#4f39f6] to-[#9514fa] shadow-sm max-w-[300px] text-white">
+            <div className="card realative w-96 bg-gradient-to-r from-[#4f39f6] to-[#9514fa] shadow-sm max-w-[300px] text-white">
+
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#FEF3C6] text-[#BB4D00] text-xs font-medium px-3 py-1 rounded-full">
+                    Most Popular
+                </div>
+
+
                 <div className="card-body">
                     <div className="">
                         <h2 className="text-2xl font-semibold mb-1">Pro</h2>

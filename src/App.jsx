@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Navbar from './components/Navbar/Navbar'
 import Banner from './components/Banner/Banner'
 import Tools from './components/Tools/Tools'
+import ToolsHeading from './components/ToolsHeading/ToolsHeading'
 import Stats from './components/Stats/Stats'
 import Feature from './components/Feature/Feature'
 import Pricing from './components/Pricing/Pricing'
@@ -25,14 +26,15 @@ const App = () => {
     <>
       <Navbar/>
       <Banner/>
+      <Stats/>
+      <ToolsHeading/>
       {/* name of each tab group should be unique */}
-      <div className="tabs tabs-box justify-center">
-        <input type="radio" name="my_tabs_1" className="tab rounded-full " onClick={()=> setActiveTab("tool")} aria-label="Products" defaultChecked />
-        <input type="radio" name="my_tabs_1" className="tab rounded-full" onClick={()=> setActiveTab("cart")} aria-label="Cart" />
+      <div className="tabs tabs-box justify-center bg-white mb-4">
+        <input type="radio" name="my_tabs_1" className={`tab rounded-full ${activeTab === "tool" ? "bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white" : ""}`} onClick={()=> setActiveTab("tool")} aria-label="Products" defaultChecked />
+        <input type="radio" name="my_tabs_1" className={`tab rounded-full ${activeTab === "cart" ? "bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white" : ""}`} onClick={()=> setActiveTab("cart")} aria-label={`Cart (${cart.length})`} />
       </div>
       {activeTab === "tool" && <Tools toolPromise={toolPromise} cart={cart} setCart={setCart}/>}
-      {activeTab === "cart" && <Cart cart={cart}/>}
-      <Stats/>
+      {activeTab === "cart" && <Cart cart={cart} setCart={setCart}/>}
       <Feature/>
       <Pricing/>
       <Workflow/>

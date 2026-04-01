@@ -2,17 +2,16 @@ import UserIcon from "../../assets/user.png";
 import PackageIcon from "../../assets/package.png";
 import RocketIcon from "../../assets/rocket.png";
 
-
 const Feature = () => {
   return (
-    <div className="mt-24">
-        <div className="text-center">
+    <div className="mt-16">
+        <div className="text-center mb-6">
             <h3 className="text-4xl font-semibold mb-2">Get Started in 3 Steps</h3>
             <p className="text-[#627382FF] mb-2">Start using premium digital tools in minutes, not hours.</p>
         </div>
 
-        <div className="flex justify-center gap-7">
-            <div className="card bg-base-100 w-88 h-88 shadow-sm">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full md:w-[90%] lg:w-[80%] mx-auto px-4 justify-items-center">
+            <div className="card bg-base-100 w-full max-w-sm h-88 shadow-sm">
                 {/* Card Badge */}
                 <div className="flex justify-end mr-4 mt-4 mb-6">
                     <div className="bg-gradient-to-r from-[#4f39f6] to-[#9514fa] rounded-full w-8 h-8 flex items-center justify-center text-white">01</div>
@@ -32,7 +31,7 @@ const Feature = () => {
                 </div>
             </div>
 
-            <div className="card bg-base-100 w-88 h-88 shadow-sm">
+            <div className="card bg-base-100 w-full max-w-sm h-88 shadow-sm">
                 {/* Card Badge */}
                 <div className="flex justify-end mr-4 mt-4 mb-6">
                     <div className="bg-gradient-to-r from-[#4f39f6] to-[#9514fa] rounded-full w-8 h-8 flex items-center justify-center text-white">02</div>
@@ -52,7 +51,7 @@ const Feature = () => {
                 </div>
             </div>
 
-            <div className="card bg-base-100 w-88 h-88 shadow-sm">
+            <div className="card bg-base-100 w-full max-w-sm h-88 shadow-sm">
                 {/* Card Badge */}
                 <div className="flex justify-end mr-4 mt-4 mb-6">
                     <div className="bg-gradient-to-r from-[#4f39f6] to-[#9514fa] rounded-full w-8 h-8 flex items-center justify-center text-white">03</div>
@@ -68,7 +67,7 @@ const Feature = () => {
                 {/* Card Description */}
                 <div className="card-body text-center">
                     <h2 className="text-2xl font-semibold">Start Creating</h2>
-                    <p className="text-[#627382FF]">Download and start using your premium  tools immediately.</p>
+                    <p className="text-[#627382FF]">Download and start using your premium tools immediately.</p>
                 </div>
             </div>
         </div>
