@@ -24,7 +24,7 @@ const App = () => {
   console.log(cart)
   return (
     <>
-      <Navbar/>
+      <Navbar cart={cart}/>
       <Banner/>
       <Stats/>
       <ToolsHeading/>

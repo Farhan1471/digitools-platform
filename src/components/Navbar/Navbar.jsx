@@ -1,7 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import Cart from '../Cart/Cart'
 
-const Navbar = () => {
+
+
+const Navbar = ({cart}) => {
     return(
         <div className="navbar w-[80%] mx-auto">
             <div className="navbar-start">
@@ -27,7 +30,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end gap-5">
-                <a className="cursor-pointer"><FontAwesomeIcon icon={faCartShopping} /></a>
+                <a className="cursor-pointer"><FontAwesomeIcon icon={faCartShopping} />{cart.length>0 && cart.length}</a>
                 
                 <a className="btn border-transparent bg-transparent text-black hover:bg-transparent hover:text-purple-600">Login</a>
                 <a className="btn rounded-full text-white bg-gradient-to-r from-[#4f39f6] to-[#9514fa]">Get Started</a>

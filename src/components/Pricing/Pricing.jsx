@@ -78,7 +78,7 @@ const Pricing = () => {
                         </li>
                     </ul>
                     <div className="mt-6">
-                        <button className="btn btn-primary rounded-full w-full bg-white text-[#4f39f6]">Get Started Free</button>
+                        <button className="btn btn-primary rounded-full w-full bg-white text-[#4f39f6]">Start Pro Trial</button>
                     </div>
                 </div>
             </div>
@@ -117,7 +117,7 @@ const Pricing = () => {
                         </li>
                     </ul>
                     <div className="mt-6">
-                        <button className="btn btn-primary rounded-full w-full bg-gradient-to-r from-[#4f39f6] to-[#9514fa]">Get Started Free</button>
+                        <button className="btn btn-primary rounded-full w-full bg-gradient-to-r from-[#4f39f6] to-[#9514fa]">Contact Sales</button>
                     </div>
                 </div>
             </div>
