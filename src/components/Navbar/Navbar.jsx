@@ -2,7 +2,7 @@ const Navbar = () => {
     return(
         <div className="navbar">
             <div className="navbar-start">
-                <div className="flex items-center gap-1 font-bold text-xl">
+                <div className="flex items-center gap-1 font-bold text-xl mx-auto">
                     <h2>DigiTools</h2>
                 </div>
             </div>
@@ -26,7 +26,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end gap-5">
-                <a className="btn text-black">Login</a>
+                <a className="btn border-transparent bg-transparent text-black">Login</a>
                 <a className="btn rounded-full text-white bg-gradient-to-r from-[#4f39f6] to-[#9514fa]">Get Started</a>
             </div>
         </div>
